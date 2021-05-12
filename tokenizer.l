@@ -23,11 +23,11 @@
 "if"			{printf("I see int if \n"); return IF;}
 "else"			{printf("I see int else \n"); return ELSE;}
 "return"		{printf("I see return \n"); return RETURN;}
-"while"			{printf("I see while \n"); return WHILE;}
+"while"		{printf("I see while \n"); return WHILE;}
 "global "		{printf("I see global \n"); return GLOBAL;}
-"print"			{printf("I see print \n"); return PRINT;}
+"print"		{printf("I see print \n"); return PRINT;}
 "\\n"			{printf("I see backn \n"); return BACKN;}
-([a-z]|[A-Z])+		{printf("I see an id : %s \n", yytext); yylval.sval = (char*)malloc(sizeof(char) * 				(strlen(yytext)+1)); strcpy(yylval.sval, yytext); return ID;}
+([a-z]|[A-Z])+	{printf("I see an id : %s \n", yytext); yylval.sval = (char*)malloc(sizeof(char) * 				(strlen(yytext)+1)); strcpy(yylval.sval, yytext); return ID;}
 "="			{printf("I see = \n"); return ASSIGN;}
 "+"			{printf("I see + \n"); return PLUS;}
 "-"			{printf("I see - \n"); return MINUS;}
