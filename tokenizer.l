@@ -17,8 +17,8 @@
 
 %%
 
-[1-9][0-9]*|0		{printf("I see a num : %s \n", yytext); yylval.ival = atoi(yytext); return NUM; }
-"void "			{printf("I see void keyword \n"); return VOID;}
+[1-9][0-9]*|0	{printf("I see a num : %s \n", yytext); yylval.ival = atoi(yytext); return NUM; }
+"void "		{printf("I see void keyword \n"); return VOID;}
 "int "			{printf("I see int keyword \n"); return INT;}
 "if"			{printf("I see int if \n"); return IF;}
 "else"			{printf("I see int else \n"); return ELSE;}
@@ -27,7 +27,8 @@
 "global "		{printf("I see global \n"); return GLOBAL;}
 "print"		{printf("I see print \n"); return PRINT;}
 "\\n"			{printf("I see backn \n"); return BACKN;}
-([a-z]|[A-Z])+	{printf("I see an id : %s \n", yytext); yylval.sval = (char*)malloc(sizeof(char) * 				(strlen(yytext)+1)); strcpy(yylval.sval, yytext); return ID;}
+([a-z]|[A-Z])+	{printf("I see an id : %s \n", yytext); 
+		yylval.sval = (char*)malloc(sizeof(char)*(strlen(yytext)+1)); strcpy(yylval.sval, yytext); return ID;}
 "="			{printf("I see = \n"); return ASSIGN;}
 "+"			{printf("I see + \n"); return PLUS;}
 "-"			{printf("I see - \n"); return MINUS;}
