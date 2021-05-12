@@ -12,7 +12,7 @@ I have implemented a C compiler using Flex and Bison as tokenizer and parser. Th
 Flex and Bison are tools for building programs that handle structured input. 
 They were originally tools for building compilers, but they have proven to be useful in many other areas.
 
-You can get and install Flex & Bison tools using below commands:
+You can get and install Flex & Bison tools using the below commands:
 ```
 sudo apt-get update
 sudo apt-get install flex
@@ -39,7 +39,7 @@ gcc parser.tab.c lex.yy.c -o compiler
 ```
 
 ### Step 3: Compile Your C Program Using My Compiler
-Finally, you can compile your C program using below command:
+Finally, you can compile your C program using the below command:
 
 ```
 ./compiler input.c output.asm
