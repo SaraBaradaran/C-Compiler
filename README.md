@@ -9,8 +9,8 @@ I have implemented a C compiler using flex and bison as tokenizer and parser. Th
 * flex
 * bison 
 
-Flex and BisonFlex and Bison are tools for building programs that handle structured input. 
-They wereoriginally tools for building compilers, but they have proven to be useful in many other areas.
+Flex and Bison are tools for building programs that handle structured input. 
+They were originally tools for building compilers, but they have proven to be useful in many other areas.
 
 You can get and install flex & bison tools using below commands:
 ```
@@ -36,6 +36,8 @@ flex tokenizer.l
 bison -d parser.y
 gcc parser.tab.c lex.yy.c -o compiler
 ```
+
+Finally, run `./compiler input.c`
 
 ### Step 3: Modify input.txt File 
 
