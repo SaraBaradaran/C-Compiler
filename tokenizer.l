@@ -28,7 +28,7 @@
 "print"		{printf("I see print \n"); return PRINT;}
 "\\n"			{printf("I see backn \n"); return BACKN;}
 ([a-z]|[A-Z])+	{printf("I see an id : %s \n", yytext); 
-		yylval.sval = (char*)malloc(sizeof(char)*(strlen(yytext)+1)); strcpy(yylval.sval, yytext); return ID;}
+			yylval.sval = (char*)malloc(sizeof(char)*(strlen(yytext)+1)); strcpy(yylval.sval, yytext); return ID;}
 "="			{printf("I see = \n"); return ASSIGN;}
 "+"			{printf("I see + \n"); return PLUS;}
 "-"			{printf("I see - \n"); return MINUS;}
