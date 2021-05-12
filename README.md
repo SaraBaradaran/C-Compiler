@@ -38,7 +38,7 @@ bison -d parser.y
 gcc parser.tab.c lex.yy.c -o compiler
 ```
 
-### Step 3: Compile Your C Programm Using My Compiler
+### Step 3: Compile Your C Program Using My Compiler
 Finally, you can compile your C program using below command:
 
 ```
