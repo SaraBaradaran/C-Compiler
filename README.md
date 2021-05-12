@@ -38,7 +38,12 @@ bison -d parser.y
 gcc parser.tab.c lex.yy.c -o compiler
 ```
 
-Finally, run `./compiler input.c`
+Finally, you can compile your C program using below command:
+
+```
+./compiler input.c output.asm
+```
+
 <!-- 
 ### Step 3: Modify input.txt File 
 You may want to modify input.txt file based on your C program.
