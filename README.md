@@ -7,9 +7,11 @@ I have implemented a C compiler using flex and bison as tokenizer and parser. Th
 
 ### Requirements
 * flex
-* bison (Konsole is a terminal emulator built on the KDE Platform). See [flex & bison]
+* bison 
+(Flex and BisonFlex and Bison are tools for building programs that handle structured input. 
+They wereoriginally tools for building compilers, but they have proven to be useful in many other areas.)
 
-
+### Related Links
 * [flex & bison](https://web.iitd.ac.in/~sumeet/flex__bison.pdf)
 * [flex & bison](https://aquamentus.com/flex_bison.html)
 * (https://www.oreilly.com/library/view/flex-bison/9780596805418/ch01.html)
