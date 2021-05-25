@@ -1,6 +1,6 @@
 /*******************************************************************/
 //	
-//		Creator:‌ Sara Baradaran
+//		Creator:‌ Sara Baradaran, Mahdi Heidari
 //		Creation Date:‌ Jan 2020
 //		Project Title: C to MIPS assembly compiler
 //		
